@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: change 30s infinite ease-in-out;
+}
+
+nav{
+    width: 100%;
+    height: 12vh;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+nav .logo{
+    width: 25%;
+    text-align: center;
+}
+
+nav .menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .menu a{
+    width: 25%;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+.menu a:hover{
+    color: chocolate;
+}
+
+main{
+    width: 100%;
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffff;
+}
+
+section h3{
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+
+section h1{
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+
+section p{
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+}
+
+section .btn1{
+    background: #ffff;
+    color: #000;
+}
+.btn1:hover{
+    background: #00b894;
+    color: #fff;
+}
+
+section .btn2{
+    background: #00b894;
+    color: #fff;
+}
+.btn2:hover{
+    background: #ffff;
+    color: #000;
+}
+
+.change-content::after{
+    content: '';
+    animation: changetext 30s infinite linear;
+    color: #00b894;
+}
+
+@keyframes changetext{
+    0%{content: "Darjeeling";}
+    10%{content: "Agra";}
+    20%{content: "Jaipur";}
+    30%{content: "Kerala";}
+    40%{content: "Delhi";}
+    50%{content: "Mumbai";}
+    60%{content: "Ahemedabad";}
+    70%{content: "Jammu & kashmir";}
+    80%{content: "Uttrakhand";}
+    90%{content: "Bihar";}
+    100%{content: "Goa";}
+}
+
+@keyframes change{
+    0%{
+        background-image: url(darjeeling.jpg);
+    }
+    10%{
+        background-image: url(agra.jpg);
+    }
+    20%{
+        background-image:url(jaipur.jpg);
+    }
+    30%{
+        background-image:url(kerala.jpg);
+    }
+    40%{
+        background-image:url(delhi.jpg);
+    }
+    50%{
+        background-image:url(mumbai.jpg);
+    }
+    60%{
+        background-image:url(ahemdabad.jpg);
+    }
+    70%{
+        background-image:url(jammu.jpg);
+    }
+    80%{
+        background-image:url(uttrakhand.jpg);
+    }
+    90%{
+        background-image:url(bihar.jpg);
+    }
+    100%{
+        background-image:url(goa.jpg);
+    }
+}
